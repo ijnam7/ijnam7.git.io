@@ -1,11 +1,27 @@
 body {
   margin: 0;
-  padding: 40px;
-  max-width: 1200px;
+  padding: 0;
   font-family: "Noto Sans KR", sans-serif;
   background-color: #f0f2f5;
-  color: #333;
+  color: #4842a1;
   line-height: 1.6;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.navbar {
+  background-color: #4842a1;
+  padding: 10px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 h1,
@@ -23,6 +39,23 @@ h3 {
   margin-top: 30px;
   border-bottom: 2px solid #ccc;
   padding-bottom: 5px;
+}
+
+a {
+  color: #333; /* 기본 색상 */
+  font-weight: bold;
+}
+
+a:visited {
+  color: #333; /* 방문 후에도 같은 색상 */
+}
+
+a:hover {
+  color: #333; /* 마우스를 올려도 같은 색상 */
+}
+
+a:active {
+  color: #333; /* 클릭 중에도 같은 색상 */
 }
 
 .intro {
@@ -43,6 +76,7 @@ section.card {
   padding: 20px;
   flex: 1 1 48%;
   min-width: 300px;
+  max-width: 500px;
 }
 
 .card table {
@@ -52,14 +86,14 @@ section.card {
 
 th,
 td {
-  padding: 8px 10px;
+  padding: 3px 10px;
   text-align: left;
   vertical-align: top;
   word-break: break-word;
 }
 
 th {
-  width: 35%;
+  width: 33%;
   font-weight: bold;
 }
 
@@ -70,26 +104,15 @@ th {
   margin-top: 10px;
 }
 
-.skill-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 0;
-  flex: 1 1 45px;
+.test-link {
+  font-size: 12px;
+  padding: 0px 1px 1px 10px;
 }
 
 .skill-icon img {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
-  transition: opacity 0.3s ease;
-}
-
-.skill-text {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #2c3e50;
 }
 
 @media (max-width: 768px) {
