@@ -3,20 +3,34 @@
   --secondary-color: #f9f9f9; /* 배경 색상 */
 }
 
-h1 {
-  color: var(--secondary-color);
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
   text-align: center;
+  color: var(--primary-color);
+  font-size: 50px;
+  font-weight: bold;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Noto Sans KR", sans-serif;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   line-height: 1.6;
   user-select: none;
   height: 100%;
+}
+
+.index-bg {
+  background-color: var(--primary-color);
+}
+
+.logo {
+  color: var(--secondary-color);
 }
 
 main {
@@ -187,5 +201,40 @@ th {
   transform: translateX(-50%);
   background-color: var(--secondary-color);
   padding: 10px 20px;
-  border: 3px solid #4252a1;
+  border: 3px solid var(--primary-color);
+}
+
+.fade-bg {
+  animation: bgFade 1s ease forwards;
+  background-color: var(--primary-color); /* 시작 색 (파란색) */
+  animation-delay: 0.5s;
+}
+
+.fade-div {
+  opacity: 0;
+  animation: contentfade 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.fade-1 {
+  animation-delay: 0.1s;
+}
+
+.fade-2 {
+  animation-delay: 0.5s;
+}
+
+@keyframes bgFade {
+  0% {
+    background-color: var(--primary-color); /* 시작 */
+  }
+  100% {
+    background-color: var(--secondary-color); /* 끝 */
+  }
+}
+
+@keyframes contentfade {
+  to {
+    opacity: 1;
+  }
 }
