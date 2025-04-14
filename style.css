@@ -5,6 +5,8 @@ body {
   background-color: #4842a1;
   color: #4842a1;
   line-height: 1.6;
+  user-select: none;
+  height: 100%;
 }
 
 main {
@@ -74,16 +76,16 @@ a:active {
   scroll-snap-type: x mandatory;
 }
 
-::-webkit-scrollbar {
+.container::-webkit-scrollbar {
   width: 20px;
   height: 20px;
 }
 
-::-webkit-scrollbar-track {
+.container::-webkit-scrollbar-track {
   background: #4842a1; /* 밝은 배경 */
 }
 
-::-webkit-scrollbar-thumb {
+.container::-webkit-scrollbar-thumb {
   background: #fff;
   border-top: 6px solid #4842a1;
 }
@@ -110,7 +112,7 @@ td {
 }
 
 th {
-  width: 33%;
+  width: 35%;
   font-weight: bold;
 }
 
