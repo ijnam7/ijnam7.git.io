@@ -1,9 +1,14 @@
+:root {
+  --primary-color: #4252a1; /* 기본 색상 */
+  --secondary-color: #f9f9f9; /* 배경 색상 */
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Noto Sans KR", sans-serif;
-  background-color: #4842a1;
-  color: #4842a1;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
   line-height: 1.6;
   user-select: none;
   height: 100%;
@@ -18,7 +23,7 @@ main {
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: var(--secondary-color);
   text-align: center;
   position: sticky;
   top: 0;
@@ -30,10 +35,10 @@ h3 {
 }
 
 .name-box {
-  background-color: #4842a1;
+  background-color: var(--primary-color);
   padding-left: 15px;
   padding-top: 8px;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .name-hint {
@@ -54,15 +59,19 @@ h3 {
 
 h3 {
   margin-top: 30px;
-  border-bottom: 2px solid #4842a1;
+  border-bottom: 2px solid var(--primary-color);
   padding-bottom: 5px;
+}
+
+.top-h {
+  margin-top: 10px;
 }
 
 a,
 a:visited,
 a:hover,
 a:active {
-  color: #4842a1;
+  color: var(--primary-color);
 }
 
 .intro {
@@ -82,16 +91,16 @@ a:active {
 }
 
 .container::-webkit-scrollbar-track {
-  background: #4842a1; /* 밝은 배경 */
+  background: var(--primary-color); /* 밝은 배경 */
 }
 
 .container::-webkit-scrollbar-thumb {
-  background: #fff;
-  border-top: 6px solid #4842a1;
+  background: var(--secondary-color);
+  border-top: 6px solid var(--primary-color);
 }
 
 section.card {
-  background-color: #fff;
+  background-color: var(--secondary-color);
   padding: 20px;
   flex: 1 1 48%;
   min-width: 290px;
@@ -114,13 +123,6 @@ td {
 th {
   width: 35%;
   font-weight: bold;
-}
-
-.language-section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 10px;
 }
 
 .test-link {
