@@ -20,21 +20,23 @@
     <main>
       <div class="container">
         <section class="card">
-          <h1>Nam Inji</h1>
-
+            <span class="family-name">family name</span>
+            <span class="given-name">given name</span>
+            <h1>NAM INJI</h1>
+          </span>
           <h3>Personal Information</h3>
           <table class="personal-info">
             <tr>
               <th>Address</th>
-              <td>Jeonju, South Korea</td>
+              <td><a href="https://maps.app.goo.gl/t2RjEGxr1ZMda3cPA" target="_blank">Jeonju, South Korea</a></td>
             </tr>
             <tr>
               <th>Email</th>
-              <td>ij.nam7@gmail.com</td>
+              <td id="textToCopy1" style="cursor: pointer; text-decoration: underline;">ij.nam7@gmail.com</td>
             </tr>
             <tr>
               <th>Phone</th>
-              <td>+82 10 6297 3231</td>
+              <td id="textToCopy2" style="cursor: pointer; text-decoration: underline;">+82 10 6297 3231</td>
             </tr>
           </table>
 
@@ -103,5 +105,13 @@
         </section>
       </div>
     </main>
+
+    <div id="customAlert" class="alert">
+      <div class="alert-content">
+        <p id="alertMessage"></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
