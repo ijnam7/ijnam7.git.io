@@ -12,7 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
       rel="stylesheet"
     />
-    <body>
+  </head>
+  <body>
+    <div id="page">
       <div class="title letter fade-div fade-1">cover letter</div>
       <main>
         <div class="fade-div fade-2">
@@ -40,6 +42,27 @@
           </section>
         </div>
       </main>
-    </body>
-  </head>
+
+      <div class="bottom-space">this is bottom</div>
+      <script>
+        const page = document.getElementById("page");
+        let isBouncing = false;
+
+        window.addEventListener("scroll", () => {
+          const scrollY = window.scrollY;
+          const maxScroll = document.body.scrollHeight - window.innerHeight;
+
+          if (scrollY > maxScroll - 50 && !isBouncing) {
+            isBouncing = true;
+
+            setTimeout(() => {
+              page.classList.remove("jelly-bounce");
+              window.scrollTo({ top: maxScroll - 100, behavior: "smooth" });
+              isBouncing = false;
+            }, 600);
+          }
+        });
+      </script>
+    </div>
+  </body>
 </html>

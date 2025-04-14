@@ -3,6 +3,13 @@
   --secondary-color: #f9f9f9; /* 배경 색상 */
 }
 
+html,
+body {
+  height: 100%;
+  background-color: var(--secondary-color);
+  overscroll-behavior: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -39,14 +46,6 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-}
-
-.navbar {
-  background-color: var(--secondary-color);
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 h3 {
@@ -237,4 +236,26 @@ th {
   to {
     opacity: 1;
   }
+}
+
+.bottom-space {
+  height: 100px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+@keyframes jelly-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.jelly-bounce {
+  animation: jelly-bounce 0.8s ease;
 }
