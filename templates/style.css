@@ -66,6 +66,7 @@ h3 {
 
 .name {
   font-size: 36px;
+  font-weight: bold;
 }
 
 .family-name {
@@ -73,6 +74,11 @@ h3 {
 }
 .given-name {
   padding-left: 22px;
+}
+
+.page {
+  padding: 20px;
+  text-align: center;
 }
 
 h3 {
@@ -99,6 +105,7 @@ a:active {
 .container {
   display: flex;
   flex-wrap: nowrap;
+  margin-top: 20px;
   gap: 20px;
   scroll-snap-type: x mandatory;
 }
