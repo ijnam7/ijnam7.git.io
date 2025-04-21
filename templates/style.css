@@ -266,3 +266,18 @@ th {
 .jelly-bounce {
   animation: jelly-bounce 0.8s ease;
 }
+
+.main-text {
+  max-width: 450px;
+  line-height: 1.75;
+}
+
+.main-text p {
+  margin-bottom: 1.5em;
+}
+
+.highlight {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.05em 0.2em;
+}
